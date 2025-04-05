@@ -5,4 +5,3 @@ class Blogs::PostsController < ApplicationController
 end 
 
 
-#v1/blogs/posts/health_check

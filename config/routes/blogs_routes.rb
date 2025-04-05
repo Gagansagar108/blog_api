@@ -1,5 +1,6 @@
-scope path: "/v1", module: :blogs do 
-    resources :posts do 
-    end 
+namspace :blogs do 
+    scope path: "/v1" do
+        resources :posts
+      end
 end 
-
+#v1/blogs/posts/health_checkv
