@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
      after_save :after_save_handling
     
-     before_save :before_save_handling
+     #before_save :before_save_handling
 
      after_commit :after_commit_handling
 
