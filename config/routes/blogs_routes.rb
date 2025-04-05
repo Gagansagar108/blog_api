@@ -5,6 +5,10 @@ scope path: "/v1" do
                     get :health_check
                 end 
             end 
+
+            resources :comments do
+            end 
+
         end
 end 
 
