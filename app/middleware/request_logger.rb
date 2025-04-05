@@ -10,7 +10,7 @@ class RequestLogger
       ended_at = Time.now
       req = Rack::Request.new(env)
       duration = (ended_at - started_at) * 1000.0
-      binding.pry
+    
       Rails.logger.info({
         method: req.request_method,
         path: req.fullpath,
