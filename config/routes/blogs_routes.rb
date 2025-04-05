@@ -1,4 +1,4 @@
-namspace :blogs do 
+namespace :blogs do 
     scope path: "/v1" do
         resources :posts
       end
