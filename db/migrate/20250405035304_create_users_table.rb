@@ -6,7 +6,7 @@ class CreateUsersTable < ActiveRecord::Migration[8.0]
       t.integer :age 
       t.string :mobile
       t.string :mobile_country_code
-      t.string :status, default: true
+      t.boolean :status, default: true
       t.timestamps
     end
     add_index :users, :email, unique: true
