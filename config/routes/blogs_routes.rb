@@ -1,5 +1,5 @@
+scope path: "/v1" do
 namespace :blogs do 
-    scope path: "/v1" do
         resources :posts
       end
 end 
