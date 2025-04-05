@@ -2,13 +2,13 @@ class User < ApplicationRecord
      has_many :posts 
      has_many :comments
 
-     after_save :after_save_handling
+     #after_save :after_save_handling
     
      #before_save :before_save_handling
 
-     after_commit :after_commit_handling
+     #after_commit :after_commit_handling
 
-     after_create :after_create_handling
+     #after_create :after_create_handling
 
      def after_save_handling
           binding.pry
