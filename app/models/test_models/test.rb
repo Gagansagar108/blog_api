@@ -1,2 +1,3 @@
-class Test < ApplicationRecord
+
+class TestModels::Test < ApplicationRecord
 end 
