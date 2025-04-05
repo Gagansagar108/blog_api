@@ -1,5 +1,5 @@
 scope path: "/v1" do
-    namespace :posts do 
+    namespace :blogs do 
             resources :posts, only: [] do
                 collection do 
                     get :health_check
