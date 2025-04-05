@@ -8,7 +8,7 @@ class RequestLogger
       started_at = Time.now
       status, headers, response = @app.call(env)
       ended_at = Time.now
-  
+      binding.pry
       req = Rack::Request.new(env)
       duration = (ended_at - started_at) * 1000.0
   
