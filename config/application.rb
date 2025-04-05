@@ -1,5 +1,7 @@
 require_relative "boot"
 
+require_relative '../app/middleware/request_logger' 
+
 require "rails/all"
 
 # Require the gems listed in Gemfile, including any gems
@@ -15,9 +17,7 @@ module BlogApi
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
-
-    config.eager_load_paths << Rails.root.join('app/middleware')
-    
+t
     config.middleware.use RequestLogger
 
     
