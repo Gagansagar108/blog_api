@@ -21,4 +21,3 @@ class Blogs::PostsController < ApplicationController
 end 
 
 
-
